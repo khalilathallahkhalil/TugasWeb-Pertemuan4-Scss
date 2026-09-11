@@ -1,0 +1,29 @@
+@use '../abstracts' as *;
+
+.form-group {
+  margin-bottom: $spacing-sm;
+
+  &__label {
+    display: block;
+    margin-bottom: 0.3rem;
+    color: $deep-blue;
+    font-weight: 600;
+  }
+
+  &__input,
+  &__textarea,
+  &__range {
+    width: 100%;
+    padding: 0.7rem;
+    border: 1px solid $border-color;
+    border-radius: 8px;
+    background: $bg-color;
+    color: $text-primary;
+    font-family: inherit;
+
+    &:focus {
+      outline: 2px solid $primary-blue;
+      background: #fff;
+    }
+  }
+}

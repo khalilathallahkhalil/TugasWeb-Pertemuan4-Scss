@@ -1,0 +1,27 @@
+@use '../abstracts' as *;
+
+.badge {
+  padding: 0.3rem 0.8rem;
+  border: 1px solid $primary-baby-blue;
+  border-radius: 12px;
+  background: $bg-color;
+  color: $deep-blue;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+// Loop @each untuk variasi style badge secara otomatis
+$badge-variants: (
+  'primary': $primary-baby-blue,
+  'accent': $accent-yellow,
+  'dark': $deep-blue
+);
+
+@each $name, $bg-color in $badge-variants {
+  .badge--#{$name} {
+    background: $bg-color;
+    @if $name == 'dark' {
+      color: #fff;
+    }
+  }
+}

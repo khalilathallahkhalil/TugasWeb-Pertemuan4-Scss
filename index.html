@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page - Khalil Athallah</title>
+  <meta name="description" content="Website landing page Khalil Athallah - Mahasiswa Ilmu Komputer UNIMED">
+  <meta property="og:title" content="Landing Page Khalil Athallah">
+  <meta property="og:description" content="Portofolio dan landing page Khalil Athallah.">
+  <meta property="og:type" content="website">
+  <!-- Pastikan mengarah ke file CSS hasil compile dari SCSS -->
+  <link rel="stylesheet" href="scss/main.css">
+</head>
+
+<body>
+
+<header class="header-container">
+  <div class="header-container__brand">
+    <span class="header-container__logo">KAI.</span>
+  </div>
+
+  <nav class="header-nav">
+    <ul class="header-nav__list">
+      <li class="header-nav__item">
+        <a href="#hero" class="header-nav__link">Home</a>
+      </li>
+      <li class="header-nav__item">
+        <a href="#tentang" class="header-nav__link">Tentang</a>
+      </li>
+      <li class="header-nav__item">
+        <a href="#pendidikan" class="header-nav__link">Pendidikan</a>
+      </li>
+      <li class="header-nav__item">
+        <a href="#pengalaman" class="header-nav__link">Pengalaman & Skill</a>
+      </li>
+      <li class="header-nav__item">
+        <a href="#kontak" class="header-nav__link">Kontak</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<section id="hero" class="hero-section">
+  <div class="hero-section__overlay"></div>
+
+  <div class="hero-section__content">
+    <span class="hero-section__badge">
+      ⚓ PORTFOLIO PRIBADI
+    </span>
+
+    <h1 class="hero-section__title">
+      Khalil Athallah
+    </h1>
+
+    <p class="hero-section__subtitle">
+      Mahasiswa Ilmu Komputer<br>
+      Universitas Negeri Medan
+    </p>
+
+    <div class="hero-section__actions">
+      <a href="#tentang" class="btn btn--primary">
+        Jelajahi Profile
+      </a>
+
+      <a href="#kontak" class="btn btn--secondary">
+        Hubungi Saya
+      </a>
+    </div>
+  </div>
+
+  <a href="#tentang" class="hero-section__scroll">
+    ↓ Scroll untuk menjelajah
+  </a>
+</section>
+
+<main class="main-layout">
+
+<section id="tentang" class="section-block">
+  <h2 class="section-block__title">
+    Tentang Saya
+  </h2>
+
+  <div class="profile-card">
+    <div class="profile-card__avatar-side">
+      <figure class="profile-card__figure">
+        <img
+          src="foto.jpeg"
+          alt="Foto Khalil Athallah"
+          class="profile-card__img"
+        >
+
+        <figcaption class="profile-card__caption">
+          Khalil Athallah
+        </figcaption>
+      </figure>
+    </div>
+
+    <div class="profile-card__info-side">
+      <h3 class="profile-card__greeting">
+        Ahoyyy Salam Kenal! 🐟
+      </h3>
+
+      <p class="profile-card__text">
+        Halo haloo! Perkenalkan nama saya
+        Khalil Athallah.
+        Saat ini saya seorang mahasiswa semester 3
+        Program Studi Ilmu Komputer di Universitas Negeri Medan.
+        Saya berusia 19 tahun, lahir pada bulan Februari 2008,
+        dan berdomisili di Medan Sunggal.
+      </p>
+
+      <p class="profile-card__text">
+        Saya memiliki ketertarikan tinggi pada dunia perakitan
+        komputer, infrastruktur jaringan LAN & Fiber Optik,
+        serta eksplorasi teknologi komputer terkini.
+      </p>
+
+      <div class="profile-card__badges">
+        <span class="badge">
+          📍 Medan Sunggal
+        </span>
+
+        <span class="badge">
+          🎓 UNIMED '25
+        </span>
+
+        <span class="badge">
+          💻 Ilmu Komputer
+        </span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="pendidikan" class="section-block">
+  <h2 class="section-block__title">
+    Riwayat Pendidikan
+  </h2>
+
+  <div class="education-timeline">
+
+    <article class="timeline-item">
+      <div class="timeline-item__badge">
+        1
+      </div>
+
+      <div class="timeline-item__content card-box">
+        <span class="timeline-item__year">
+          <time datetime="2013">2013</time> -
+          <time datetime="2019">2019</time>
+        </span>
+
+        <h3 class="timeline-item__title">
+          SD Swasta Kartika 1-2 Medan
+        </h3>
+
+        <p class="timeline-item__desc">
+          Pendidikan Sekolah Dasar
+        </p>
+      </div>
+    </article>
+
+    <article class="timeline-item">
+      <div class="timeline-item__badge">
+        2
+      </div>
+
+      <div class="timeline-item__content card-box">
+        <span class="timeline-item__year">
+          <time datetime="2019">2019</time> -
+          <time datetime="2022">2022</time>
+        </span>
+
+        <h3 class="timeline-item__title">
+          SMP Swasta Kartika 1-2 Medan
+        </h3>
+
+        <p class="timeline-item__desc">
+          Pendidikan Sekolah Menengah Pertama
+        </p>
+      </div>
+    </article>
+
+    <article class="timeline-item">
+      <div class="timeline-item__badge">
+        3
+      </div>
+
+      <div class="timeline-item__content card-box">
+        <span class="timeline-item__year">
+          <time datetime="2022">2022</time> -
+          <time datetime="2025">2025</time>
+        </span>
+
+        <h3 class="timeline-item__title">
+          SMK Negeri 9 Medan
+        </h3>
+
+        <p class="timeline-item__desc">
+          Jurusan Teknik Komputer dan Jaringan (TKJ)
+        </p>
+      </div>
+    </article>
+
+    <article class="timeline-item timeline-item--active">
+      <div class="timeline-item__badge">
+        4
+      </div>
+
+      <div class="timeline-item__content card-box">
+        <span class="timeline-item__year">
+          <time datetime="2025">2025</time> - Sekarang
+        </span>
+
+        <h3 class="timeline-item__title">
+          Universitas Negeri Medan
+        </h3>
+
+        <p class="timeline-item__desc">
+          Program Studi Ilmu Komputer
+        </p>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<section id="pengalaman" class="section-block">
+  <h2 class="section-block__title">
+    Pengalaman & Keahlian
+  </h2>
+
+  <div class="experience-skill-grid">
+
+    <article class="card-box card-box--accent">
+      <div class="card-box__header">
+        <span class="card-box__icon">
+          💼
+        </span>
+
+        <h3 class="card-box__title">
+          Pengalaman Kerja / Magang
+        </h3>
+      </div>
+
+      <div class="card-box__body">
+        <h4 class="exp-title">
+          Teknisi Magang
+        </h4>
+
+        <p class="exp-location">
+          🏢 Universitas Sumatera Utara (USU)
+        </p>
+
+        <p class="exp-date">
+          📅 <time datetime="2024-12">Desember 2024</time> - <time datetime="2025-02">Februari 2025</time>
+        </p>
+
+        <p class="exp-desc">
+          Bertanggung jawab dalam instalasi, pemeliharaan,
+          serta perakitan jaringan kabel LAN, Fiber Optik,
+          dan perangkat jaringan terkait di lingkungan
+          kampus USU.
+        </p>
+      </div>
+    </article>
+
+    <aside class="card-box card-box--highlight">
+      <div class="card-box__header">
+        <span class="card-box__icon">
+          ⚡
+        </span>
+
+        <h3 class="card-box__title">
+          Keahlian Utama
+        </h3>
+      </div>
+
+      <div class="card-box__body">
+        <ul class="skill-tags">
+
+          <li class="skill-tag">
+            <span class="skill-tag__icon">
+              🔌
+            </span>
+
+            <span class="skill-tag__name">
+              Merakit Kabel Jaringan (LAN & Optik)
+            </span>
+          </li>
+
+          <li class="skill-tag">
+            <span class="skill-tag__icon">
+              🖥️
+            </span>
+
+            <span class="skill-tag__name">
+              Merakit Komputer & Hardware
+            </span>
+          </li>
+
+        </ul>
+      </div>
+    </aside>
+
+  </div>
+</section>
+
+<section id="kontak" class="section-block">
+  <h2 class="section-block__title">
+    Kontak Saya
+  </h2>
+
+  <div class="contact-grid">
+
+    <article class="card-box">
+      <h3 class="card-box__title">
+        Informasi Kontak
+      </h3>
+
+      <p class="contact-subtitle">
+        Silakan hubungi saya melalui saluran berikut:
+      </p>
+
+      <ul class="contact-list">
+
+        <li class="contact-list__item">
+          <span class="contact-list__icon">
+            ✉️
+          </span>
+
+          <div>
+            <strong>Email:</strong><br>
+
+            <a
+              href="mailto:khalilathallahkhalil@gmail.com"
+              class="contact-list__link"
+            >
+              khalilathallahkhalil@gmail.com
+            </a>
+          </div>
+        </li>
+
+        <li class="contact-list__item">
+          <span class="contact-list__icon">
+            📱
+          </span>
+
+          <div>
+            <strong>Telepon / WhatsApp:</strong><br>
+            +62 896-7037-2747
+          </div>
+        </li>
+
+        <li class="contact-list__item">
+          <span class="contact-list__icon">
+            📍
+          </span>
+
+          <div>
+            <strong>Lokasi:</strong><br>
+            Medan, Indonesia
+          </div>
+        </li>
+
+      </ul>
+    </article>
+
+    <div class="card-box">
+      <h3 class="card-box__title">
+        Kirim Pesan Langsung
+      </h3>
+
+      <form
+        action="#"
+        method="post"
+        class="contact-form"
+      >
+
+        <div class="form-group">
+          <label
+            for="nama"
+            class="form-group__label"
+          >
+            Nama Lengkap
+          </label>
+
+          <input
+            type="text"
+            id="nama"
+            name="nama"
+            class="form-group__input"
+            placeholder="Masukkan nama Anda"
+            required
+          >
+        </div>
+
+        <div class="form-group">
+          <label
+            for="email"
+            class="form-group__label"
+          >
+            Email
+          </label>
+
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="form-group__input"
+            placeholder="nama@email.com"
+            required
+          >
+        </div>
+
+        <div class="form-group">
+          <label
+            for="tanggal"
+            class="form-group__label"
+          >
+            Tanggal Pertemuan / Janji
+          </label>
+
+          <input
+            type="date"
+            id="tanggal"
+            name="tanggal"
+            class="form-group__input"
+          >
+        </div>
+
+        <div class="form-group">
+          <label
+            for="kepuasan"
+            class="form-group__label"
+          >
+            Tingkat Ke-kerenan (1 - 10)
+          </label>
+
+          <input
+            type="range"
+            id="kepuasan"
+            name="kepuasan"
+            class="form-group__range"
+            min="1"
+            max="10"
+          >
+        </div>
+
+        <div class="form-group">
+          <label
+            for="pesan"
+            class="form-group__label"
+          >
+            Pesan
+          </label>
+
+          <textarea
+            id="pesan"
+            name="pesan"
+            class="form-group__textarea"
+            rows="4"
+            placeholder="Tuliskan pesan Anda di sini..."
+            required
+          ></textarea>
+        </div>
+
+        <button
+          type="submit"
+          class="btn btn--primary btn--full"
+        >
+          Kirim Pesan
+        </button>
+
+      </form>
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<footer class="footer-container">
+  <p class="footer-container__text">
+    &copy; 2026 Khalil Athallah. ⚓ Well well well siap.
+  </p>
+</footer>
+
+</body>
+</html>

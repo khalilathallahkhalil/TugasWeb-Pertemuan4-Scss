@@ -1,0 +1,9 @@
+@use '../abstracts' as *;
+
+.footer-container {
+  margin-top: 4rem;
+  padding: $spacing-lg;
+  background: $deep-blue;
+  color: $primary-baby-blue;
+  text-align: center;
+}

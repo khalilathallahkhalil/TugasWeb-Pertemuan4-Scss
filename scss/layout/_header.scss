@@ -1,0 +1,60 @@
+@use '../abstracts' as *;
+
+.header-container {
+  @include flex-center(row, space-between, center);
+  padding: $spacing-sm $spacing-lg;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  box-shadow: $shadow-sm;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 2px solid $primary-baby-blue;
+
+  @include respond-to('mobile') {
+    flex-direction: column;
+    gap: 0.7rem;
+    padding: 0.8rem 1rem;
+  }
+
+  &__logo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, $accent-yellow-dark, #fde047);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.header-nav {
+  &__list {
+    display: flex;
+    gap: $spacing-md;
+    flex-wrap: wrap;
+    list-style: none;
+
+    @include respond-to('mobile') {
+      justify-content: center;
+      gap: 0.3rem;
+    }
+  }
+
+  &__link {
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    color: $text-primary;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.25s;
+
+    &:hover {
+      background: $primary-baby-blue;
+      color: $deep-blue;
+    }
+
+    @include respond-to('mobile') {
+      padding: 0.3rem 0.5rem;
+      font-size: 0.75rem;
+    }
+  }
+}

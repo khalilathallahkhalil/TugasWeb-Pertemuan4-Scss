@@ -1,0 +1,102 @@
+@use '../abstracts' as *;
+
+.hero-section {
+  position: relative;
+  min-height: calc(100vh - 70px);
+  @include flex-center(column, center, center);
+  padding: 5rem $spacing-md;
+  text-align: center;
+  background: url("laut.jpg") center/cover no-repeat;
+  overflow: hidden;
+
+  @include respond-to('mobile') {
+    min-height: calc(100vh - 100px);
+    padding: 4rem 1rem;
+  }
+
+  &__overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      135deg,
+      rgba(15, 23, 42, 0.78),
+      rgba(3, 105, 161, 0.45)
+    );
+  }
+
+  &__content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    color: #fff;
+  }
+
+  &__badge {
+    display: inline-block;
+    margin-bottom: 1.2rem;
+    padding: 0.5rem 1.3rem;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.92);
+    color: $deep-blue;
+    font-size: 0.85rem;
+    font-weight: 700;
+    box-shadow: $shadow-sm;
+  }
+
+  &__title {
+    margin-bottom: $spacing-sm;
+    color: #fff;
+    font-size: clamp(2.8rem, 7vw, 5rem);
+    line-height: 1.1;
+    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.35);
+
+    @include respond-to('mobile') {
+      font-size: 2.8rem;
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: $spacing-lg;
+    color: #e0f2fe;
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    line-height: 1.7;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+
+    @include respond-to('mobile') {
+      font-size: 1rem;
+    }
+  }
+
+  &__actions {
+    @include flex-center(row, center, center);
+    gap: $spacing-sm;
+    flex-wrap: wrap;
+
+    @include respond-to('mobile') {
+      flex-direction: column;
+
+      .btn {
+        width: 80%;
+      }
+    }
+  }
+
+  &__scroll {
+    position: absolute;
+    z-index: 2;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+    opacity: 0.85;
+    animation: floating 2s ease-in-out infinite;
+  }
+}
+
+@keyframes floating {
+  0%, 100% { transform: translate(-50%, 0); }
+  50% { transform: translate(-50%, -8px); }
+}
